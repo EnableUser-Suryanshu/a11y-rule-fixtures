@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: aria-roledescription</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: aria-roledescription must be on elements with a semantic role</h1>
+<div aria-roledescription="slide" data-fixture="fail">Tax saving funds</div>
+<button aria-roledescription="attachment button" data-fixture="pass">Attach statement</button>
+</main>
+</body>
+</html>

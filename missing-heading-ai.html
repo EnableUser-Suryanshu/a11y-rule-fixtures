@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: missing-heading-ai</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: Text that should be marked as a heading is not identified as one.</h1>
+<div style="font-size:28px;font-weight:700;margin-top:24px" data-fixture="fail">Scheme details</div><p>The scheme invests in large-cap equities with a long-term horizon. Exit load applies within one year.</p><div style="font-size:28px;font-weight:700;margin-top:24px" data-fixture="fail">Risk factors</div><p>Equity investments are subject to market risk and may lose value.</p>
+<h2 data-fixture="pass">How to invest</h2><p>Start a SIP online in three steps.</p>
+</main>
+</body>
+</html>

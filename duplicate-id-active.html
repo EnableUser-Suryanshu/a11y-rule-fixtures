@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: duplicate-id-active</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: IDs of active elements must be unique</h1>
+<button id="buy" data-fixture="pair">Buy INFY</button> <button id="buy" data-fixture="fail">Buy TCS</button> <button id="sell-1" data-fixture="pass">Sell</button>
+</main>
+</body>
+</html>

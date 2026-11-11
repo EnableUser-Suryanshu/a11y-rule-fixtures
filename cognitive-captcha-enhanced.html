@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: cognitive-captcha-enhanced</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: CAPTCHA challenges must not use any cognitive function test, including identifying objects.</h1>
+<form action="#" data-fixture="fail"><p>Select all images with traffic lights</p><div role="group" aria-label="CAPTCHA images"><label><input type="checkbox" name="tile" value="0"><img src="img/tile0.png" alt="Image 1"></label><label><input type="checkbox" name="tile" value="1"><img src="img/tile1.png" alt="Image 2"></label><label><input type="checkbox" name="tile" value="2"><img src="img/tile2.png" alt="Image 3"></label><label><input type="checkbox" name="tile" value="3"><img src="img/tile3.png" alt="Image 4"></label><label><input type="checkbox" name="tile" value="4"><img src="img/tile4.png" alt="Image 5"></label><label><input type="checkbox" name="tile" value="5"><img src="img/tile5.png" alt="Image 6"></label><label><input type="checkbox" name="tile" value="6"><img src="img/tile6.png" alt="Image 7"></label><label><input type="checkbox" name="tile" value="7"><img src="img/tile7.png" alt="Image 8"></label><label><input type="checkbox" name="tile" value="8"><img src="img/tile8.png" alt="Image 9"></label></div><button type="submit">Verify</button></form>
+</main>
+</body>
+</html>

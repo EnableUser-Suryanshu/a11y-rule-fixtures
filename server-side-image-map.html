@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: server-side-image-map</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: Server-side image maps must not be used</h1>
+<a href="/branch-map" data-fixture="fail"><img src="img/map.png" ismap alt="Branch locations"></a>
+<img src="img/map.png" usemap="#m" alt="Branch locations" data-fixture="pass"><map name="m"><area shape="rect" coords="5,5,115,115" href="#mumbai" alt="Mumbai branch"><area shape="rect" coords="125,5,235,115" href="#pune" alt="Pune branch"></map>
+</main>
+</body>
+</html>

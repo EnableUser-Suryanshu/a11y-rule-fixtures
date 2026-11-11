@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: identical-links-same-purpose</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: Links with the same name must have a similar purpose</h1>
+<p><a href="/factsheet.pdf" data-fixture="pair">Download</a> <a href="/sid.pdf" data-fixture="fail">Download</a></p>
+<p><a href="/kim.pdf" data-fixture="pass">Download key information memorandum</a></p>
+</main>
+</body>
+</html>

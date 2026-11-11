@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: dragging-movements-slider</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: Slider must be operable without requiring a dragging movement</h1>
+<label id="amtl">Monthly amount</label><div role="slider" aria-labelledby="amtl" aria-valuemin="500" aria-valuemax="100000" aria-valuenow="5000" data-fixture="fail" style="width:300px;height:8px;background:#ccc;position:relative"><span id="thumb" style="position:absolute;left:10px;top:-6px;width:20px;height:20px;border-radius:10px;background:#245"></span></div>
+<script>(function(){var t=document.getElementById("thumb"),s=t.parentNode,down=false;t.addEventListener("mousedown",function(){down=true});document.addEventListener("mouseup",function(){down=false});document.addEventListener("mousemove",function(e){if(!down)return;var r=s.getBoundingClientRect(),x=Math.max(0,Math.min(r.width,e.clientX-r.left));t.style.left=x+"px";s.setAttribute("aria-valuenow",Math.round(500+x/r.width*99500));});})();</script>
+<p><label for="amt2">Monthly amount (number)</label> <input id="amt2" type="number" min="500" step="500" value="5000" data-fixture="pass"></p>
+</main>
+</body>
+</html>

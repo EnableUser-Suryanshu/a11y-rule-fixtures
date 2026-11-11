@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility test page: aria-braille-equivalent</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#1a1a1a;background:#fff}.note{color:#444}</style>
+</head>
+<body>
+<header><p class="note">Test fixture for automated accessibility checking.</p></header>
+<main>
+<h1>Test page: aria-braille attributes must have a non-braille equivalent</h1>
+<button aria-braillelabel="dl" data-fixture="fail"><svg width="16" height="16" aria-hidden="true"><rect width="16" height="16"/></svg></button>
+<button aria-label="Download statement" aria-braillelabel="dl stmt" data-fixture="pass"><svg width="16" height="16" aria-hidden="true"><rect width="16" height="16"/></svg></button>
+</main>
+</body>
+</html>
